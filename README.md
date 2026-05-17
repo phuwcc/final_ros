@@ -407,6 +407,10 @@ source /opt/ros/humble/setup.bash
 source install/setup.bash
 ros2 bag play world_3 --clock 100 --topics /scan /odom /tf /cmd_vel
 ```
+Hoặc nếu muốn record:
+```bash
+ros2 bag record /scan /tf /tf_static /odom -o world_3_new
+```
 
 
 **Terminal 4:**
